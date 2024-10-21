@@ -1,0 +1,252 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  cursor: pointer;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  padding: 2px 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+header p {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  width: 75px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid rgb(227, 98, 12);
+  border-radius: 9px;
+  color: white;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.menu {
+  border: 2px solid black;
+  border-radius: 2px;
+  margin: 2px;
+  padding: 2px;
+  height: 25px;
+  width: 25px;
+}
+.group {
+  margin: 2px;
+  padding: 2px;
+  background-color: white;
+  border: none;
+  clip-path: circle();
+  height: 30px;
+  width: 30px;
+}
+main {
+  padding: 15px;
+}
+
+.event {
+  display: flex;
+  height: 209px;
+  padding-top: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  overflow-x: auto;
+  width: auto;
+  scrollbar-width: none;
+}
+.event_cards {
+  display: flex;
+  flex: 0 0 auto;
+  border-radius: 28px;
+  height: 193px;
+  width: 286px;
+  background-color: rgb(124, 124, 124);
+}
+
+.splitbill_color {
+  border-radius: 10px;
+  background-color: #f26a22;
+  padding: 16px;
+  gap: 16px;
+}
+.splitbill {
+  display: flex;
+  align-items: flex-start;
+}
+
+#img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-right: 20px;
+}
+
+#imgsplit {
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+#splitbill-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+#splitbill1 {
+  color: #151515;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+#splitbill2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  margin: 0;
+}
+
+#try-groups-button {
+  padding: 10px 24px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+}
+#must_haves {
+  color: white;
+  font-family: Arial, Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+.Musthaves {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: auto;
+  height: 209px;
+  padding-top: 10px;
+  align-items: flex-start;
+  gap: 8px;
+  scrollbar-width: hidden;
+}
+.cards {
+  margin: 4px;
+  padding: 4px;
+  display: flex;
+  flex: 0 0 auto;
+  border-radius: 28px;
+  height: 193px;
+  width: 143px;
+  background-color: rgb(124, 124, 124);
+  scrollbar-width: hidden;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.add-to-cart {
+  margin: 3px;
+  padding: 3px;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  width: 84px;
+  height: 24px;
+  border: none;
+  box-shadow: 0px 0px 3px rgb(218, 218, 218);
+  background-color: #ffffff;
+  color: rgb(223, 16, 16);
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 500;
+  line-height: 16px;
+}
+.item1 span {
+  display: inline;
+  font-size: large;
+  font-weight: 550;
+}
+.append {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 22px;
+}
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-to-cart span {
+  font-size: 12px;
+}
+footer {
+  background-color: white;
+  color: black;
+  position: sticky;
+  bottom: 0px;
+  margin-top: auto;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4px;
+  margin: 4px;
+}
+#desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4px;
+  margin: 4px;
+}
+footer img {
+  width: 25px;
+  height: 25px;
+}

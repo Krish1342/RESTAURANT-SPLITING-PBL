@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <header>
+      <img class="menu" src="images/icons8-menu-500.png" alt="MENU" />
+      <p>Table-7</p>
+      <img class="group" src="images/icons8-group-90.png" alt="" />
+    </header>
+    <div class="container">
+      <div class="people-input">
+        <label for="number-of-people">Number of people:</label>
+        <input
+          type="number"
+          id="number-of-people"
+          name="number_of_people"
+          min="1"
+          required
+        />
+      </div>
+      <h1>Order Summary</h1>
+      <div id="order-summary"></div>
+
+    </div>
+      <footer>
+        <div>
+          <div class="icons">
+            <a href="home.html"
+              ><img src="images/icons8-home-384.png" alt="Explore"
+            /></a>
+            <a href="menu.html"
+              ><img src="images/icons8-bookmark-384.png" alt="Menu"
+            /></a>
+            <a href="orders.html"
+              ><img src="images/icons8-bell.svg" alt="Orders"
+            /></a>
+          </div>
+          <div id="desc">
+            <h5>Home</h5>
+            <h5>Menu</h5>
+            <h5>Orders</h5>
+          </div>
+        </div>
+      </footer>
+
+    <script src="order.js"></script>
+  </body>
+</html>

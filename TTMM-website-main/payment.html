@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Table 7</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <link rel="stylesheet" href="payments.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="card">
+            <h2 style="margin-top: 0; margin-bottom: 24px;">Payment Details</h2>
+            
+            <div class="order-summary">
+                <h3 style="margin-top: 0;">Order Summary</h3>
+                <div id="orderDetails"></div>
+        <input type="number" id="number-of-people" placeholder="Enter number of people" />
+        <div id="splitAmount"></div>
+            </div>
+
+            <h3>Select Payment Method</h3>
+            <div class="payment-methods">
+                <div class="payment-method" onclick="selectPaymentMethod(this, 'card')">
+                    <img src="/api/placeholder/24/24" alt="Credit Card" style="margin-bottom: 8px;">
+                    <div>Credit Card</div>
+                </div>
+                <div class="payment-method" onclick="selectPaymentMethod(this, 'upi')">
+                    <img src="/api/placeholder/24/24" alt="UPI" style="margin-bottom: 8px;">
+                    <div>UPI</div>
+                </div>
+                <div class="payment-method" onclick="selectPaymentMethod(this, 'netbanking')">
+                    <img src="/api/placeholder/24/24" alt="Net Banking" style="margin-bottom: 8px;">
+                    <div>Net Banking</div>
+                </div>
+            </div>
+
+            <div id="paymentForm">
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="Enter your email">
+                </div>
+
+                <div id="cardFields" style="display: none;">
+                    <div class="form-group">
+                        <label class="form-label" for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" class="form-input" placeholder="1234 5678 9012 3456">
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div class="form-group">
+                            <label class="form-label" for="expiry">Expiry Date</label>
+                            <input type="text" id="expiry" class="form-input" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cvv">CVV</label>
+                            <input type="text" id="cvv" class="form-input" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="upiField" style="display: none;">
+                    <div class="form-group">
+                        <label class="form-label" for="upiId">UPI ID</label>
+                        <input type="text" id="upiId" class="form-input" placeholder="username@upi">
+                    </div>
+                </div>
+
+                <div id="netbankingFields" style="display: none;">
+                    <div class="form-group">
+                        <label class="form-label" for="bank">Select Bank</label>
+                        <select id="bank" class="form-input">
+                            <option value="">Select your bank</option>
+                            <option value="sbi">State Bank of India</option>
+                            <option value="hdfc">HDFC Bank</option>
+                            <option value="icici">ICICI Bank</option>
+                            <option value="axis">Axis Bank</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="button" onclick="processPayment()">Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="payments.js"></script>
+       
+</body>
+</html>
